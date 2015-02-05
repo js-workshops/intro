@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Functions (Intro)</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- add Bootstrap CSS from CDN -->
@@ -30,7 +30,7 @@
                     </blockquote>
                     
                     <ol>
-                        <li>Invoke the <code>date()</code> function to show today's date.</li>
+                        <li>Invoke the <code>Date()</code> function to show today's date.</li>
                         <li>Invoke the <code>alert()</code> function with a parameter - your alert message(i.e., <code>alert ("This is an alert!");</code>).</li>
                         <li>Invoke <code>alert</code> to view the function itself in console.
                             <ul>
@@ -59,7 +59,7 @@
         <script>
             var callThisFunction = function(name) {
                 if(typeof name === "string") {
-                    console.log("SUCCESS: Good job, " + name + "! You just invoked callThisFunction() with a string.");
+                    console.log("SUCCESS: Good job, " + name + "! You just invoked callThisFunction() with a parameter.");
                 } else {
                     console.log("ERROR: Make sure to pass in a string as the first parameter of callThisFunction().");
                 }
