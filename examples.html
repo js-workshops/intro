@@ -14,16 +14,18 @@
     return myParameter;
   };
 
+  var x = 18;
+
   x = 18;
 
   var x = 3; // assigns the value 3 to x
-  var x = x + 2; // assigns the value 5 to x
-  var x = x - 3; // assigns the value 2 to x (5-3)
-  var x = x * 12; // assigns the value 24 to x (2*12)
-  var x = x / 2; // assigns the value 12 to x (24/2)
-  var x = x % 2; // assigns the value 2 to x (12%2)
-  var x = x++; // assigns the value 3 to x (2 + 1)
-  var x = x--; // assigns the value 2 to x (3 -1)
+  x = x + 2; // assigns the value 5 to x
+  x = x - 3; // assigns the value 2 to x (5-3)
+  x = x * 12; // assigns the value 24 to x (2*12)
+  x = x / 2; // assigns the value 12 to x (24/2)
+  x = x % 2; // assigns the value 2 to x (12%2)
+  x = x++; // assigns the value 3 to x (2 + 1)
+  x = x--; // assigns the value 2 to x (3 -1)
 
   var x = 3;
   x += 2; // assigns the value 5 to x
@@ -31,8 +33,8 @@
   x *= 12; // assigns the value 24 to x (2*12)
   x /= 2; // assigns the value 12 to x (24/2)
   x %= 2; // assigns the value 2 to x (12%2)
-  var x = x++; // assigns the value 3 to x (2 + 1)
-  var x = x--; // assigns the value 2 to x (3 -1)
+  x = x++; // assigns the value 3 to x (2 + 1)
+  x = x--; // assigns the value 2 to x (3 -1)
 
   var x = "two strings " + "become one"; // assigns the value "two strings become one" to x
 
@@ -65,9 +67,16 @@
   x <= z; // returns true
 
   var person = {
-    firstName: "Evan",
-    lastName: "Johnson",
+    firstName: "Jane",
+    lastName: "Doe",
     age: 28
   };
+
+  person.firstName; // returns "Jane"
+
+  person['firstName']; // returns "Jane"
+
+  $('#id').addClass('active'); // selects the DOM element with an HTML id of 'id', and adds an HTML class of 'active'
+  $('#myElement').hide(); // selects the DOM element with an HTML id of 'myElement', and invokes the method 'hide'
 
 </script>
