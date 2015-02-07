@@ -87,6 +87,24 @@
   $(".myClass");
   $("form");
 
+  $("mySelector").hover( handlerIn, handlerOut );
+
+  var hoverIn = function() {
+    // hover in statement
+  };
+
+  var hoverOut = function() {
+    // statement for hover out
+  };
+
+  $("mySelector").hover( hoverIn, hoverOut );
+
+  $("mySelector").hover(function() {
+    // hover in statement
+  }, function() {
+    // hover out statement
+  });
+
 </script>
 
   <div id="myDiv"> ... <myDiv>
