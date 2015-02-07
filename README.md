@@ -17,6 +17,8 @@ Exercise files for my Intro to JavaScript and jQuery workshop that I teach at Ge
   * **String operators:** "In addition to the comparison operators, which can be used on string values, the concatenation operator (+) concatenates two string values together, returning another string that is the union of the two operand strings." [MDN Expressions and Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#String_operators)
   * **Comparison operators:** "compares its operands and returns a logical value based on whether the comparison is true." [MDN Expressions and Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison_operators)
 * **Function:** "A JavaScript function is a block of code designed to perform a particular task. A JavaScript function is executed when "something" invokes it (calls it)." - W3Schools
+* **Object (layman’s terms):** While a variable is a symbol for one specific values, and object is a symbol for a wrapper, that can have many values that describe it. [MDN Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) [MDN Object initializer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
+
   * **Invoke:** To initiate a block of code, that would otherwise not be executed.
   * **Parameter:** A variable that is passed to a function and can be accessed inside the function's block of code.
 * **MDN:** Mozilla Developer Network
