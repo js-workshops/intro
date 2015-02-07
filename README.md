@@ -4,6 +4,7 @@ Exercise files for my Intro to JavaScript and jQuery workshop that I teach at Ge
 ## Vocab
 
 * **Javascript:** “is a dynamic computer programming language.” - Wikipedia
+* **Inline JavaScript:** JavaScript that is added directly to the DOM between an opening script tag (<script) and a closing script tag (</script).
 * **Variable:** "You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules." - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
   * **Primitive:** "A primitive (primitive value, primitive data type) is data that is not an Object and does not have any methods." - [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
     * **Number:** A numeric data type. For example: Integers, Floats, Doubles, or Bignums. - [MDN Number](https://developer.mozilla.org/en-US/docs/Glossary/Number)
