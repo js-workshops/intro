@@ -8,43 +8,43 @@
 
 ## About Me
 
-* Front-End Engineer, Amazon<!--- .element: class="fragment" data-fragment-index="1" --->
-* Self-taught<!--- .element: class="fragment" data-fragment-index="2" --->
-* Love JavaScript<!--- .element: class="fragment" data-fragment-index="3" --->
+* Front-End Engineer, Amazon<!--- .element: class="fragment" data-fragment-index="1" -->
+* Self-taught<!--- .element: class="fragment" data-fragment-index="2" -->
+* Love JavaScript<!--- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
 ## About You
 
-* Introduce yourself (i.e. name, what you do, random fact)<!--- .element: class="fragment" data-fragment-index="1" --->
-* Why do you want to learn JavaScript?<!--- .element: class="fragment" data-fragment-index="2" --->
+* Introduce yourself (i.e. name, what you do, random fact)<!--- .element: class="fragment" data-fragment-index="1" -->
+* Why do you want to learn JavaScript?<!--- .element: class="fragment" data-fragment-index="2" -->
 
 ---
 
 ## Agenda
 
-* What is JavaScript?<!--- .element: class="fragment" data-fragment-index="1" --->
-* Tools<!--- .element: class="fragment" data-fragment-index="2" --->
-* Functions (intro)<!--- .element: class="fragment" data-fragment-index="3" --->
-* Variables<!--- .element: class="fragment" data-fragment-index="4" --->
-* Operators<!--- .element: class="fragment" data-fragment-index="5" --->
-* Objects<!--- .element: class="fragment" data-fragment-index="6" --->
-* Functions<!--- .element: class="fragment" data-fragment-index="7" --->
-* jQuery<!--- .element: class="fragment" data-fragment-index="8" --->
+* What is JavaScript?<!--- .element: class="fragment" data-fragment-index="1" -->
+* Tools<!--- .element: class="fragment" data-fragment-index="2" -->
+* Functions (intro)<!--- .element: class="fragment" data-fragment-index="3" -->
+* Variables<!--- .element: class="fragment" data-fragment-index="4" -->
+* Operators<!--- .element: class="fragment" data-fragment-index="5" -->
+* Objects<!--- .element: class="fragment" data-fragment-index="6" -->
+* Functions<!--- .element: class="fragment" data-fragment-index="7" -->
+* jQuery<!--- .element: class="fragment" data-fragment-index="8" -->
 
 ---
 
 ## Learning Objectives
 
-* Describe JavaScript<!--- .element: class="fragment" data-fragment-index="1" --->
-* Create a JS Variable<!--- .element: class="fragment" data-fragment-index="2" --->
-* Describe 3 different types of variables<!--- .element: class="fragment" data-fragment-index="3" --->
-* Apply JS Operators to:<!--- .element: class="fragment" data-fragment-index="4" --->
-  * preform arithmetic<!--- .element: class="fragment" data-fragment-index="5" --->
-  * concatenate strings<!--- .element: class="fragment" data-fragment-index="6" --->
-  * compare variables<!--- .element: class="fragment" data-fragment-index="7" --->
-* Create a JS Object<!--- .element: class="fragment" data-fragment-index="8" --->
-* Access a JS Object's properties<!--- .element: class="fragment" data-fragment-index="9" --->
+* Describe JavaScript<!--- .element: class="fragment" data-fragment-index="1" -->
+* Create a JS Variable<!--- .element: class="fragment" data-fragment-index="2" -->
+* Describe 3 different types of variables<!--- .element: class="fragment" data-fragment-index="3" -->
+* Apply JS Operators to:<!--- .element: class="fragment" data-fragment-index="4" -->
+  * preform arithmetic<!--- .element: class="fragment" data-fragment-index="5" -->
+  * concatenate strings<!--- .element: class="fragment" data-fragment-index="6" -->
+  * compare variables<!--- .element: class="fragment" data-fragment-index="7" -->
+* Create a JS Object<!--- .element: class="fragment" data-fragment-index="8" -->
+* Access a JS Object's properties<!--- .element: class="fragment" data-fragment-index="9" -->
 
 ---
 
@@ -78,12 +78,12 @@
 
 ## A Brief History
 
-* LiveScript was created by Brendan Eich in 10 days in May 1995<!--- .element: class="fragment" data-fragment-index="1" --->
+* LiveScript was created by Brendan Eich in 10 days in May 1995<!--- .element: class="fragment" data-fragment-index="1" -->
 <img src="_presentation/Brendan_Eich.jpg" height="150" style="height:150px; float:left; display: block; margin: 20px 60px 40px 0" />
-* <!--- .element: class="fragment" data-fragment-index="2" ---><img src="_presentation/netscape_2_startup.gif" height="150" style="height:150px; float: right;" /> Eich worked at Netscape, who was trying to enhance Netscape 2.0
-* Netscape changed the name to JavaScript in a marketing ploy<!--- .element: class="fragment" data-fragment-index="3" --->
-* IE adopted JavaScript in August 1996 when releasing v.3.0<!--- .element: class="fragment" data-fragment-index="4" --->
-* Ecma Internation standardized JavaScript in 1999 (ECMAScript)<!--- .element: class="fragment" data-fragment-index="5" --->
+* <!--- .element: class="fragment" data-fragment-index="2" --><img src="_presentation/netscape_2_startup.gif" height="150" style="height:150px; float: right;" /> Eich worked at Netscape, who was trying to enhance Netscape 2.0
+* Netscape changed the name to JavaScript in a marketing ploy<!--- .element: class="fragment" data-fragment-index="3" -->
+* IE adopted JavaScript in August 1996 when releasing v.3.0<!--- .element: class="fragment" data-fragment-index="4" -->
+* Ecma Internation standardized JavaScript in 1999 (ECMAScript)<!--- .element: class="fragment" data-fragment-index="5" -->
 
 ---
 
@@ -156,7 +156,7 @@
 
 ## Basic Function
 
-<pre><code data-trim>
+<pre><code data-trim class="javascript">
 var myFunction = function() {
   // this is a function
   // your code block goes in between the curly brackets {}
@@ -167,21 +167,81 @@ var myFunction = function() {
 
 ## Function Parameter(s)
 
-<pre><code data-trim>
+<pre><code data-trim class="javascript">
 var myFunction = function(myParameter) {
   // this is a function
   // your code block goes in between the curly brackets {}
   // you can access the parameter by it's name above:
   // myParameter in this case
+  console.log(myParameter);
 }
 
 </code></pre>
 
 ----
 
-<!--- .element: data-background="#CCC" --->
+<!--- .element: data-background="#CCC" -->
 
-# Exercise
+## Exercise
 
 File: 001-functions-intro.html
+
+---
+
+# Variables
+
+----
+
+## Mozilla Developer Network
+
+> You use variables as <b>symbolic names</b> for values in your application. The names of variables, called <b>identifiers</b>, conform to certain rules.
+
+----
+
+## Variable Rules
+
+* Must start with a letter, underscore (&#95;), or dollar sign($)<!--- .element: class="fragment" data-fragment-index="1" -->
+* Subsequent letters can also be digits (0-9)<!--- .element: class="fragment" data-fragment-index="2" -->
+* Variable names are case sensitive<!--- .element: class="fragment" data-fragment-index="3" -->
+
+----
+
+## Declaring Variables
+
+Using the <i>var</i> keyword, we are able to declare variables to the current scope.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+var x = 18;
+</code></pre>
+
+----
+
+## Global Variables
+
+If you don't use the <i>var</i> keyword, you will be declaring a global variable.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+x = 18;
+</code></pre>
+
+----
+
+## Variable Types
+
+Primitive Variables are the most common type:
+
+| Type          | Example            | 
+| ------------- |:------------------:|
+| Number        | 42, 3.14159        |
+| Boolean       | true / false       |
+| Strings       | "howdy"            | 
+| undefined     | value is undefined !
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 002-variables.html
 

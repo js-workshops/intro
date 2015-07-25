@@ -179,7 +179,65 @@ var myFunction = function(myParameter) {
 
 ----
 
-# Exercise
+## Exercise
 
 File: 001-functions-intro.html
+
+---
+
+# Variables
+
+----
+
+## Mozilla Developer Network
+
+> You use variables as <b>symbolic names</b> for values in your application. The names of variables, called <b>identifiers</b>, conform to certain rules.
+
+----
+
+## Variable Rules
+
+* Must start with a letter, underscore (&#95;), or dollar sign($)
+* Subsequent letters can also be digits (0-9)
+* Variable names are case sensitive
+
+----
+
+## Declaring Variables
+
+Using the <i>var</i> keyword, we are able to declare variables to the current scope.
+
+<pre><code data-trim class="javascript">
+var x = 18;
+</code></pre>
+
+----
+
+## Global Variables
+
+If you don't use the <i>var</i> keyword, you will be declaring a global variable.
+
+<pre><code data-trim class="javascript">
+x = 18;
+</code></pre>
+
+----
+
+## Variable Types
+
+Primitive Variables are the most common type:
+
+| Type          | Example            | 
+| ------------- |:------------------:|
+| Number        | 42, 3.14159        |
+| Boolean       | true / false       |
+| Strings       | "howdy"            | 
+| undefined     | value is undefined !
+
+----
+
+## Exercise
+
+File: 002-variables.html
+
 
