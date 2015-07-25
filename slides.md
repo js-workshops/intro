@@ -85,5 +85,45 @@
 * IE adopted JavaScript in August 1996 when releasing v.3.0<!--- .element: class="fragment" data-fragment-index="4" --->
 * Ecma Internation standardized JavaScript in 1999 (ECMAScript)<!--- .element: class="fragment" data-fragment-index="5" --->
 
+---
 
+# Tools
 
+----
+
+## Sublime
+
+<img src="_presentation/sublime.png" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;"/>
+
+* A text editor for code
+* http://www.sublimetext.com/
+
+----
+
+## Chrome
+
+<img src="_presentation/chrome.png" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;"/>
+
+* Webbrowser
+* Advanced developer tools
+* https://www.google.com/chrome/browser/desktop/
+
+----
+
+## Exercise Files
+
+<img src="_presentation/Octocat.png" style="border:none;box-shadow:none; width: 200px; display:block;margin:30px auto;"/>
+
+* https://github.com/js-workshops/intro
+* Download files using git clone or the ‘Download Zip’ button
+* After unzipping the files, copy them to a directory you want to work from (i.e. ~/Document, ~/Desktop)
+
+----
+
+## Console
+
+<img src="_presentation/console.png" style="border:none;box-shadow:none; width: 600px; display:block;margin:30px auto;"/>
+
+* Chrome Menu (top right hamburger button) -> Tools -> Developer Tools
+* Mac shortcut: Cmd + Opt + i
+* PC shortcut: F12, Ctrl + Shift + i
