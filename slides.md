@@ -78,9 +78,10 @@
 
 ## A Brief History
 
-* LiveScript was created by Brendan Eich in 10 days in May 1995
 <img src="_presentation/Brendan_Eich.jpg" height="150" style="height:150px; float:left; display: block; margin: 20px 60px 40px 0" />
-* <img src="_presentation/netscape_2_startup.gif" height="150" style="height:150px; float: right;" /> Eich worked at Netscape, who was trying to enhance Netscape 2.0
+<img src="_presentation/netscape_2_startup.gif" height="150" style="height:150px; float: left;" />
+* LiveScript was created by Brendan Eich in 10 days in May 1995
+* Eich worked at Netscape, who was trying to enhance Netscape 2.0
 * Netscape changed the name to JavaScript in a marketing ploy
 * IE adopted JavaScript in August 1996 when releasing v.3.0
 * Ecma Internation standardized JavaScript in 1999 (ECMAScript)
