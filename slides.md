@@ -451,25 +451,19 @@ File: 003.3-operators.html
 
 ## Object Example
 
-<pre><code data-trim class="javascript">
-var person = {
+<pre><code data-trim class="javascript">var person = {
   firstName: 'Jane',
   lastName: 'Doe',
   age: 28
-};
-</code></pre>
+};</code></pre>
 
 ----
 
 ## Accessing an Object's Properties
 
-<pre><code data-trim class="javascript">
-var person.firstName;     // returns 'Jane'
-</code></pre>
+<pre><code data-trim class="javascript">var person.firstName;     // returns 'Jane'</code></pre>
 
-<pre><code data-trim class="javascript">
-var person['firstName'];  // returns 'Jane'
-</code></pre>
+<pre><code data-trim class="javascript">var person['firstName'];  // returns 'Jane'</code></pre>
 
 ----
 
