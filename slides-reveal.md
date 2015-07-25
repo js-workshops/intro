@@ -458,5 +458,59 @@ x <= z           // returns true
 
 File: 003.3-operators.html
 
+---
 
+# Objects
+
+----
+
+## Mozila Developer Network
+
+> The Object constructor creates an object wrapper.
+
+----
+
+## Layman's Terms
+
+> A variable is a symbol for one specific values. An object is a symbol that can contain many variables.
+
+----
+
+## Syntax
+
+* Are created with curly brackets ({})<!--- .element: class="fragment" data-fragment-index="1" -->
+* Contain key/value pairs separated by a semi-colon (:)<!--- .element: class="fragment" data-fragment-index="2" -->
+* The key/value pairs are separated by a comma (,)<!--- .element: class="fragment" data-fragment-index="3" -->
+
+----
+
+## Object Example
+
+<pre><code data-trim class="javascript">
+var person = {
+  firstName: 'Jane',
+  lastName: 'Doe',
+  age: 28
+};
+</code></pre>
+
+----
+
+## Accessing an Object's Properties
+
+<pre><code data-trim class="javascript">
+var person.firstName;     // returns 'Jane'
+</code></pre>
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+var person['firstName'];  // returns 'Jane'
+</code></pre>
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 004-objects.html
 
