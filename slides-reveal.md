@@ -194,7 +194,7 @@ File: 001-functions-intro.html
 
 ## Mozilla Developer Network
 
-> You use variables as <b>symbolic names</b> for values in your application. The names of variables, called <b>identifiers</b>, conform to certain rules.
+> You use variables as **symbolic names** for values in your application. The names of variables, called **identifiers**, conform to certain rules.
 
 ----
 
@@ -208,7 +208,7 @@ File: 001-functions-intro.html
 
 ## Declaring Variables
 
-Using the <i>var</i> keyword, we are able to declare variables to the current scope.
+Using the *var* keyword, we are able to declare variables to the current scope.
 
 <pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
 var x = 18;
@@ -218,7 +218,7 @@ var x = 18;
 
 ## Global Variables
 
-If you don't use the <i>var</i> keyword, you will be declaring a global variable.
+If you don't use the *var* keyword, you will be declaring a global variable.
 
 <pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
 x = 18;
@@ -253,7 +253,7 @@ File: 002-variables.html
 
 ## What is a JavaScript Operator?
 
-> JavaScript operators are <b>symbols</b> that can be used to assign values, compare values, preform arithmetic, test logic, manipulate strings, and more.
+> JavaScript operators are **symbols** that can be used to assign values, compare values, preform arithmetic, test logic, manipulate strings, and more.
 
 ----
 
@@ -375,7 +375,7 @@ File: 003.2-operators.html
 
 ## Comparison Operators
 
-> A <b>comparison operator</b> compares its operands and returns a logical value based on whether the <b>comparison is true</b>.
+> A **comparison operator** compares its operands and returns a logical value based on whether the **comparison is true**.
 
 ----
 
@@ -513,4 +513,73 @@ var person['firstName'];  // returns 'Jane'
 ## Exercise
 
 File: 004-objects.html
+
+---
+
+# Functions
+
+----
+
+## Review W3Schools
+
+> A **JavaScript function** is a block of code designed to perform a particular task. A JavaScript function is executed when "something" **invokes it** (calls it).
+
+----
+
+## Review Invoke (JS)
+
+> To initiate a block of code, that would otherwise not be executed.
+
+----
+
+## Syntax
+
+* Are created with the keyword: <!--- .element: class="fragment" data-fragment-index="1" -->***function name()***
+* You can pass in as many parameters inside the parenthesis: <!--- .element: class="fragment" data-fragment-index="2" -->***function name(param)***
+* Multiple parameters are separated with commas: <!--- .element: class="fragment" data-fragment-index="3" --> ***function name(param1, param2, param3)***
+* You statement/code is wrapped in curly brackets after the parenthesis:  <!--- .element: class="fragment" data-fragment-index="4" -->***function name() { [statement] };***
+* Return one value (i.e. Object, Variable, Function, etc)<!--- .element: class="fragment" data-fragment-index="5" -->
+* After the closing curly bracket, you end the function with a semi-colon (;)<!--- .element: class="fragment" data-fragment-index="6" -->
+
+----
+
+## Functions and Vars
+
+Functions can be assigned to variables
+
+<pre><code data-trim class="javascript">
+function logName(myName) {
+  console.log(myName);
+};
+
+logName('John'); // logs 'John' to the console
+</code></pre>
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+var logName = function(myName) {
+  console.log(myName);
+};
+
+logName('John'); // logs 'John' to the console
+</code></pre>
+
+----
+
+## Encapsulate Logic
+
+<pre><code data-trim class="javascript">
+function multiply(x, y) {
+  return x * y;
+};
+
+var z = multiply(2, 4); // assigns the number 8 to z
+</code></pre>
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 005-functions.html
 
