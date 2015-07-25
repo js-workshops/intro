@@ -156,8 +156,7 @@
 
 ## Basic Function
 
-<pre><code data-trim>
-var myFunction = function() {
+<pre><code data-trim>var myFunction = function() {
   // this is a function
   // your code block goes in between the curly brackets {}
 }
@@ -167,8 +166,7 @@ var myFunction = function() {
 
 ## Function Parameter(s)
 
-<pre><code data-trim>
-var myFunction = function(myParameter) {
+<pre><code data-trim>var myFunction = function(myParameter) {
   // this is a function
   // your code block goes in between the curly brackets {}
   // you can access the parameter by it's name above:
