@@ -207,9 +207,7 @@ File: 001-functions-intro.html
 
 Using the <i>var</i> keyword, we are able to declare variables to the current scope.
 
-<pre><code data-trim class="javascript">
-var x = 18;
-</code></pre>
+<pre><code data-trim class="javascript">var x = 18;</code></pre>
 
 ----
 
@@ -217,9 +215,7 @@ var x = 18;
 
 If you don't use the <i>var</i> keyword, you will be declaring a global variable.
 
-<pre><code data-trim class="javascript">
-x = 18;
-</code></pre>
+<pre><code data-trim class="javascript">x = 18;</code></pre>
 
 ----
 
