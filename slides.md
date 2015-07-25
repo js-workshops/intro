@@ -515,7 +515,7 @@ logName('John'); // logs 'John' to the console</code></pre>
   console.log(myName);
 };
 
-logName('John'); // logs 'John' to the console</code></pre>
+logName('Jane'); // logs 'Jane' to the console</code></pre>
 
 ----
 

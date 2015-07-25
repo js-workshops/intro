@@ -560,7 +560,7 @@ var logName = function(myName) {
   console.log(myName);
 };
 
-logName('John'); // logs 'John' to the console
+logName('Jane'); // logs 'Jane' to the console
 </code></pre>
 
 ----
@@ -583,3 +583,300 @@ var z = multiply(2, 4); // assigns the number 8 to z
 
 File: 005-functions.html
 
+---
+
+# jQuery
+
+----
+
+## What is jQuery?
+
+jQuery is a JavaScript library, or a collection of functions/methods and objects that you can utilize.
+
+----
+
+## jQuery Definition
+
+> It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.
+
+----
+
+## jQuery Motto
+
+**“write less, do more”**
+
+----
+
+## Content Dilvery Network (CDN)
+
+> A **content delivery network** or **content distribution network** (CDN) is a large distributed system of servers deployed in multiple data centers across the Internet. The goal of a CDN is to serve content to end-users with high availability and high performance.
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 006-jquery-cdn.html
+
+----
+
+## Inline JavaScript
+
+Inline JavaScript is added directly to the DOM between a &lt;script&gt; and &lt;/script&gt; tag. If your not using the HTML5 Document type, then you need to define a type on the opening script tag:
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="html">&lt;script type=“text/javascript”&gt; ... JavaScript goes here ... &lt;/script&gt;</code></pre>
+
+----
+
+## Inline JavaScript Use Cases
+
+Not a maintainable format. Use this only for code that should be fired immediately, and doesn’t deserve it’s own file (I.e. Google Analytics code).
+
+----
+
+## External JavaScript
+
+External JavaScript is JavaScript that lives in a separate file than the DOM, but is referenced by the DOM.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="html">&lt;script src=“/path/to/file.js“&gt;&lt;/script&gt;</code></pre>
+
+----
+
+## External JavaScript Use Cases
+
+* Maintainability<!--- .element: class="fragment" data-fragment-index="1" -->
+* Asynchronous loading<!--- .element: class="fragment" data-fragment-index="2" -->
+* Compiled files<!--- .element: class="fragment" data-fragment-index="3" -->
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 007-external-js.html
+
+----
+
+## $ Symbol
+
+jQuery, unless assigned otherwise, assigns its methods to the **$** symbol.
+
+----
+
+## Example jQuery Method
+
+With jQuery assigned to the **$** symbol, here is how you select a DOM element.
+
+<pre><code data-trim class="html">
+<div id="myId"></div>
+<span class="myClass"></span>
+</code></pre>
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+$("#myId")     // returns DOM element with the ID 'myId'
+$(".myClass")  // returns DOM element with the class 'myClass'
+</code></pre>
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 008-jq-selector.html
+
+----
+
+## jQuery Chained Methods
+
+You can chain methods to the jQuery object that is returned. For example, after selecting the DOM elements, you might want to preform:
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+$("#myId").addClass('active');
+// adds the class 'active' to the DOM element with the ID 'myId'
+$(".myClass").hide();
+// hides the DOM element with the class 'myClass'
+</code></pre>
+
+
+----
+
+## jQuery DOC Ready
+
+The browser loads some content synchronously and other content asynchronously. This can cause a problem with our JavaScript, as a lot of it is dependent on the state of the DOM and other assets.
+
+----
+
+## jQuery DOC Ready
+
+**Good News!** jQuery has a method to handle this.
+
+> A page can't be manipulated safely until the document is ‘ready.' jQuery detects this state of readiness for you.
+
+----
+
+## jQuery DOC Ready Example
+
+<pre><code data-trim class="javascript">
+$(document).ready(function() {
+  console.log("Ready!");
+});
+</code></pre>
+
+The console log statement is fired after the Document has loaded. http://learn.jquery.com/using-jquery-core/document-ready/
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 009-jq-doc-ready.html
+
+----
+
+## jQuery Events
+
+Events are actions that happen in the browser. jQuery allows you to bind functions to events that happens in the invent.
+
+Event types:<!--- .element: class="fragment" data-fragment-index="1" -->
+
+* ready<!--- .element: class="fragment" data-fragment-index="2" -->
+* hover<!--- .element: class="fragment" data-fragment-index="3" -->
+* click<!--- .element: class="fragment" data-fragment-index="4" -->
+
+----
+
+## Why Events?
+
+Up to this point, we have manually invoked functions. With jQuery events, we can bind functions to actions that occur in the browser.
+
+Examples:<!--- .element: class="fragment" data-fragment-index="1" -->
+
+* Once the Document has loaded, preload popular assets to improve latency<!--- .element: class="fragment" data-fragment-index="2" -->
+* On hover over button, show tooltip with additional info<!--- .element: class="fragment" data-fragment-index="3" -->
+* On click of button, show contact form in modal<!--- .element: class="fragment" data-fragment-index="4" -->
+
+----
+
+## jQuery Hover (event)
+<img src="_presentation/jq-hover.png" width="800" style="border:none;box-shadow:none; display:block;margin:30px auto;background:transparent;"/>
+
+----
+
+## Functions as variables
+
+<pre><code data-trim class="javascript">
+$("mySelector").hover(function() {
+    // hover in statement
+  }, function() {
+    // hover out statement
+  }
+);
+</code></pre>
+
+<pre><code data-trim class="javascript">
+var hoverIn = function() {
+  // hover in statement
+};
+
+var hoverOut = function() {
+  // hover out statement
+};
+
+$("mySelector").hover( hoverIn, hoverOut );
+</code></pre>
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 010.1-jq-hover.html
+
+----
+
+## Click Event
+
+<img src="_presentation/jq-click.png" width="800" style="border:none;box-shadow:none; display:block;margin:30px auto;background:transparent;"/>
+
+----
+
+## Click Event (example)
+
+<pre><code data-trim class="javascript">
+$("mySelector").click(function(e) {
+  // e is the click data
+  // this prevents the default click event from occuring
+  e.preventDefault();
+  // click occured
+});
+</code></pre>
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 010.2-jq-click.html
+
+----
+
+## jQuery Animations
+
+jQuery animations allow you to add visual effects to the browser with JavaScript. There are a number of jQuery animations, but will go over a commonly used one called show()
+
+----
+
+## jQuery Show
+
+<img src="_presentation/jq-show.png" width="800" style="border:none;box-shadow:none; display:block;margin:30px auto;background:transparent;"/>
+
+----
+
+## jQuery Show (example)
+
+<pre><code data-trim class="javascript">
+$("mySelector").show(300)
+</code></pre>
+
+* The first parameter is the duration of the animation (i.e. how long until the element is showed).<!--- .element: class="fragment" data-fragment-index="1" -->
+* An option second parameter can passed it. It has to be a function, or callback for when the animation is complete.<!--- .element: class="fragment" data-fragment-index="2" -->
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 011-jq-show.html
+
+---
+
+## Learning Objectives
+
+* Describe JavaScript<!--- .element: class="fragment" data-fragment-index="1" -->
+* Create a JS Variable<!--- .element: class="fragment" data-fragment-index="2" -->
+* Describe 3 different types of variables<!--- .element: class="fragment" data-fragment-index="3" -->
+* Apply JS Operators to:<!--- .element: class="fragment" data-fragment-index="4" -->
+  * preform arithmetic<!--- .element: class="fragment" data-fragment-index="5" -->
+  * concatenate strings<!--- .element: class="fragment" data-fragment-index="6" -->
+  * compare variables<!--- .element: class="fragment" data-fragment-index="7" -->
+* Create a JS Object<!--- .element: class="fragment" data-fragment-index="8" -->
+* Access a JS Object's properties<!--- .element: class="fragment" data-fragment-index="9" -->
+
+---
+
+## Thank You
+
+### Q&A
+
+Contact Info:
+
+* johnson.evan1@gmail.com
+* @ev_blurbs
+* https://github.com/evblurbs
