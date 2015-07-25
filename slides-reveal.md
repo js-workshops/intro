@@ -10,7 +10,7 @@
 
 * Front-End Engineer, Amazon<!--- .element: class="fragment" data-fragment-index="1" -->
 * Self-taught<!--- .element: class="fragment" data-fragment-index="2" -->
-* Love JavaScript<!--- .element: class="fragment" data-fragment-index="3" -->
+* Loves JavaScript<!--- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
@@ -235,7 +235,7 @@ Primitive Variables are the most common type:
 | Number        | 42, 3.14159        |
 | Boolean       | true / false       |
 | Strings       | "howdy"            | 
-| undefined     | value is undefined !
+| undefined     | value is undefined |
 
 ----
 
@@ -244,4 +244,219 @@ Primitive Variables are the most common type:
 ## Exercise
 
 File: 002-variables.html
+
+---
+
+# Operators
+
+----
+
+## What is a JavaScript Operator?
+
+> JavaScript operators are <b>symbols</b> that can be used to assign values, compare values, preform arithmetic, test logic, manipulate strings, and more.
+
+----
+
+## Types of Operators
+
+* Arithmetic operators<!--- .element: class="fragment" data-fragment-index="1" -->
+* Assignment operators<!--- .element: class="fragment" data-fragment-index="2" -->
+* String operators<!--- .element: class="fragment" data-fragment-index="3" -->
+
+----
+
+## Arithmetic Operators
+
+| Operator      | Description        | 
+| ------------- |:------------------:|
+| +             | Addition           |
+| -             | Subtraction        |
+| *             | Multiplication     | 
+| /             | Division           |
+| %             | Modulus            |
+| ++            | Increment          |
+| --            | Decrement          |
+
+----
+
+## Arithmetic Examples
+
+<pre><code data-trim class="javascript">
+var x = 3;      // assigns the value 3 to x
+x = x + 2;      // assigns the value 5 to x (3 + 2)
+x = x - 3;      // assigns the value 2 to x (5 - 3)
+x = x * 12;     // assigns the value 24 to x (2 * 12)
+x = x / 2;      // assigns the value 12 to x (24 / 2)
+x = x % 5;      // assigns the value 2 to x (12 % 5)
+x = x++;        // assigns the value 3 to x (x + 1)
+x = x--;        // assigns the value 2 to x (x - 1)
+</code></pre>
+
+----
+
+## Arithmetic Parenthesis
+
+Parenthesis can be used to indicate which part of an equation you want to evaluate first. 
+
+<pre><code data-trim class="javascript">
+var x = 2 * (100 / 5);   // assigns the value 40 to x
+</code></pre>
+
+<pre><code data-trim class="javascript">
+var x = (100 / 5) * 2;   // assigns the value 40 to x
+</code></pre>
+
+----
+
+## Assignment Operators
+
+| Shorthand     | Meaning            | 
+| ------------- |:------------------:|
+| x += y        | x = x + y          |
+| x -= y        | x = x - y          |
+| x &#42;= y    | x = x * y          | 
+| x /= y        | x = x / y          |
+| x %= y        | x = x % y          |
+
+----
+
+## Assignment Examples
+
+<pre><code data-trim class="javascript">
+var x = 3;   // assigns the value 3 to x
+x = x + 2;   // assigns the value 5 to x (3 + 2)
+x = x - 3;   // assigns the value 2 to x (5 - 3)
+x = x * 12;  // assigns the value 24 to x (2 * 12)
+x = x / 2;   // assigns the value 12 to x (24 / 2)
+x = x % 5;   // assigns the value 2 to x (12 % 5)
+x = x++;     // assigns the value 3 to x (x + 1)
+x = x--;     // assigns the value 2 to x (x - 1)
+</code></pre>
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+var x = 3;   // assigns the value 3 to x
+x += 2;      // assigns the value 5 to x (3 + 2)
+x -= 3;      // assigns the value 2 to x (5 - 3)
+x &#42;= 12;     // assigns the value 24 to x (2 * 12)
+x /= 2;      // assigns the value 12 to x (24 / 2)
+x %= 5;      // assigns the value 2 to x (12 % 5)
+x = x++;     // assigns the value 3 to x (x + 1)
+x = x--;     // assigns the value 2 to x (x - 1)
+</code></pre>
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 003.1-operators.html
+
+----
+
+## String Operators
+
+The + symbol is used as the addition operator with numbers, but it become the concatenation operator with strings. It combines two string values together.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+var x = "two strings " + "becomes one";
+// assigns the value "two strings become one" to x
+</code></pre>
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 003.2-operators.html
+
+----
+
+## Comparison Operators
+
+> A <b>comparison operator</b> compares its operands and returns a logical value based on whether the <b>comparison is true</b>.
+
+----
+
+## Equal and Not Equal
+
+| Operator       | Description                                | 
+| -------------- |:------------------------------------------:|
+| Equal (==)     | Returns true if the operands are equal     |
+| Not equal (!=) | Returns true if the operands are not equal |
+
+----
+
+## Equal and Not Equal (Example)
+
+<pre><code data-trim class="javascript">
+var x = 2;   // assigns the value 2 to x
+var y = 2;   // assigns the value 2 to y
+var z = 3;   // assigns the value 3 to z
+x == y       // returns true
+x == z       // returns false
+x != y       // returns false
+x != z       // returns true
+</code></pre>
+
+----
+
+## Strict Equal and Not Equal
+
+| Operator               | Description                                                            | 
+|------------------------|:----------------------------------------------------------------------:|
+| Strict equal (===)     | Returns true if the operands are equal and of the same type            |
+| Strict not equal (!==) | Returns true if the operands are not equal and/or not of the same type |
+
+----
+
+## Strict Equal and Not Equal (Example)
+
+<pre><code data-trim class="javascript">
+var x = 2;     // assigns the number 2 to x
+var y = 2;     // assigns the number 2 to y
+var z = '2';   // assigns the string 3 to z
+x ==- y        // returns true
+x === z        // returns false
+x !== y        // returns false
+x !== z        // returns true
+</code></pre>
+
+----
+
+## Greater Than / Less Than
+
+| Operator                   | Description                                                                    | 
+| -------------------------- |:------------------------------------------------------------------------------:|
+| Greater than (>)           | Returns true if the left operand is greater than the right operand             |
+| Greater than or equal (>=) | Returns true if the left operand is greater than or equal to the right operand |
+| Less than (<)              | Returns true if the left operand is less than the right operand                |
+| Less than or equal (<=)    | Returns true if the left operand is less than or equal to the right operand    |
+
+----
+
+## Greater Than / Less Than (Example)
+
+<pre><code data-trim class="javascript">
+var x = '10';    // assigns the string 10 to x
+var y = 2;       // assigns the number 2 to y
+var z = 10;      // assigns the number 10 to z
+x > y            // returns true
+x < y            // returns false
+x > z            // returns false
+x >= y           // returns true
+y >= x           // returns false
+x <= z           // returns true
+</code></pre>
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 003.3-operators.html
+
+
 
