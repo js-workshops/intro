@@ -93,7 +93,7 @@
 
 ## Sublime
 
-<img src="_presentation/sublime.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;"/>
+<img src="_presentation/sublime.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;background:transparent;"/>
 
 * A text editor for code
 * http://www.sublimetext.com/
@@ -102,7 +102,7 @@
 
 ## Chrome
 
-<img src="_presentation/chrome.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;"/>
+<img src="_presentation/chrome.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;background:transparent;"/>
 
 * Webbrowser
 * Advanced developer tools
@@ -112,7 +112,7 @@
 
 ## Exercise Files
 
-<img src="_presentation/Octocat.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:30px auto;"/>
+<img src="_presentation/Octocat.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:30px auto;background: transparent;"/>
 
 * https://github.com/js-workshops/intro
 * Download files using git clone or the ‘Download Zip’ button
@@ -122,8 +122,64 @@
 
 ## Console
 
-<img src="_presentation/console.png" width="600" style="border:none;box-shadow:none; width: 600px; display:block;margin:30px auto;"/>
+<img src="_presentation/console.png" width="600" style="border:none;box-shadow:none; width: 600px; display:block;margin:30px auto; background: transparent;"/>
 
 * Chrome Menu (top right hamburger button) -> Tools -> Developer Tools
 * Mac shortcut: Cmd + Opt + i
 * PC shortcut: F12, Ctrl + Shift + i
+
+---
+
+# Functions (Intro)
+
+----
+
+## W3Schools
+
+> A JavaScript function is a block of code designed to perform a
+> particular task. A JavaScript function is executed when "something"
+> invokes it (calls it).
+
+----
+
+## Invoke
+
+> to make use of (a law, a right, etc.)
+
+----
+
+## Invoke (JS)
+
+> To initiate a block of code, that would otherwise not be executed.
+
+----
+
+## Basic Function
+
+<pre><code data-trim>
+var myFunction = function() {
+  // this is a function
+  // your code block goes in between the curly brackets {}
+}
+</code></pre>
+
+----
+
+## Function Parameter(s)
+
+<pre><code data-trim>
+var myFunction = function(myParameter) {
+  // this is a function
+  // your code block goes in between the curly brackets {}
+  // you can access the parameter by it's name above:
+  // myParameter in this case
+}
+
+</code></pre>
+
+----
+
+# Exercise
+
+File: 001-functions-intro.html
+
