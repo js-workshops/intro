@@ -79,8 +79,8 @@
 ## A Brief History
 
 * LiveScript was created by Brendan Eich in 10 days in May 1995<!--- .element: class="fragment" data-fragment-index="1" --->
-<img src="_presentation/Brendan_Eich.jpg" style="height:150px; float:left; display: block; margin: 20px 60px 40px 0" />
-* <!--- .element: class="fragment" data-fragment-index="2" ---><img src="_presentation/netscape_2_startup.gif" style="height:150px; float: right;" /> Eich worked at Netscape, who was trying to enhance Netscape 2.0
+<img src="_presentation/Brendan_Eich.jpg" height="150" style="height:150px; float:left; display: block; margin: 20px 60px 40px 0" />
+* <!--- .element: class="fragment" data-fragment-index="2" ---><img src="_presentation/netscape_2_startup.gif" height="150" style="height:150px; float: right;" /> Eich worked at Netscape, who was trying to enhance Netscape 2.0
 * Netscape changed the name to JavaScript in a marketing ploy<!--- .element: class="fragment" data-fragment-index="3" --->
 * IE adopted JavaScript in August 1996 when releasing v.3.0<!--- .element: class="fragment" data-fragment-index="4" --->
 * Ecma Internation standardized JavaScript in 1999 (ECMAScript)<!--- .element: class="fragment" data-fragment-index="5" --->
@@ -93,7 +93,7 @@
 
 ## Sublime
 
-<img src="_presentation/sublime.png" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;"/>
+<img src="_presentation/sublime.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;"/>
 
 * A text editor for code
 * http://www.sublimetext.com/
@@ -102,7 +102,7 @@
 
 ## Chrome
 
-<img src="_presentation/chrome.png" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;"/>
+<img src="_presentation/chrome.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;"/>
 
 * Webbrowser
 * Advanced developer tools
@@ -112,7 +112,7 @@
 
 ## Exercise Files
 
-<img src="_presentation/Octocat.png" style="border:none;box-shadow:none; width: 200px; display:block;margin:30px auto;"/>
+<img src="_presentation/Octocat.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:30px auto;"/>
 
 * https://github.com/js-workshops/intro
 * Download files using git clone or the ‘Download Zip’ button
@@ -122,7 +122,7 @@
 
 ## Console
 
-<img src="_presentation/console.png" style="border:none;box-shadow:none; width: 600px; display:block;margin:30px auto;"/>
+<img src="_presentation/console.png" width="600" style="border:none;box-shadow:none; width: 600px; display:block;margin:30px auto;"/>
 
 * Chrome Menu (top right hamburger button) -> Tools -> Developer Tools
 * Mac shortcut: Cmd + Opt + i
