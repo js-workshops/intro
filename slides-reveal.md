@@ -1,4 +1,4 @@
-<img src="_presentation/ga-logo.png" style="border:none; background: transparent; box-shadow:none;" />
+<img src="img/ga-logo.png" style="border:none; background: transparent; box-shadow:none;" />
 
 # Intro to JavaScript
 
@@ -25,12 +25,14 @@
 
 * What is JavaScript?<!--- .element: class="fragment" data-fragment-index="1" -->
 * Tools<!--- .element: class="fragment" data-fragment-index="2" -->
-* Functions (intro)<!--- .element: class="fragment" data-fragment-index="3" -->
+* Syntax<!--- .element: class="fragment" data-fragment-index="3" -->
 * Variables<!--- .element: class="fragment" data-fragment-index="4" -->
-* Operators<!--- .element: class="fragment" data-fragment-index="5" -->
-* Objects<!--- .element: class="fragment" data-fragment-index="6" -->
-* Functions<!--- .element: class="fragment" data-fragment-index="7" -->
-* jQuery<!--- .element: class="fragment" data-fragment-index="8" -->
+* Functions (intro)<!--- .element: class="fragment" data-fragment-index="5" -->
+* Operators<!--- .element: class="fragment" data-fragment-index="6" -->
+* Objects<!--- .element: class="fragment" data-fragment-index="7" -->
+* Functions<!--- .element: class="fragment" data-fragment-index="8" -->
+* External JavaScript<!--- .element: class="fragment" data-fragment-index="9" -->
+* jQuery<!--- .element: class="fragment" data-fragment-index="10" -->
 
 ---
 
@@ -64,23 +66,35 @@
 
 ----
 
+## Programming Languages
+
+> A programming language is a formal constructed language designed to communicate instructions to a machine, particularly a computer.
+
+----
+
+## Choose Your Own Adventure
+
+<img src="img/choose-your-adventure.jpg" style="border:none; max-height: 500px;" />
+
+----
+
 ## How about @iamdevloper?
 
-<img src="_presentation/iamdevloper.png" style="border:none;box-shadow:none;" />
+<img src="img/iamdevloper.png" style="border:none;box-shadow:none;" />
 
 ----
 
 ## Client Side vs. Server Side
 
-<img src="_presentation/client-server-side.png" />
+<img src="img/client-server-side.png" />
 
 ----
 
 ## A Brief History
 
 * LiveScript was created by Brendan Eich in 10 days in May 1995<!--- .element: class="fragment" data-fragment-index="1" -->
-<img src="_presentation/Brendan_Eich.jpg" height="150" style="height:150px; float:left; display: block; margin: 20px 60px 40px 0" />
-* <!--- .element: class="fragment" data-fragment-index="2" --><img src="_presentation/netscape_2_startup.gif" height="150" style="height:150px; float: right;" /> Eich worked at Netscape, who was trying to enhance Netscape 2.0
+<img src="img/Brendan_Eich.jpg" height="150" style="height:150px; float:left; display: block; margin: 20px 60px 40px 0" />
+* <!--- .element: class="fragment" data-fragment-index="2" --><img src="img/netscape_2_startup.gif" height="150" style="height:150px; float: right;" /> Eich worked at Netscape, who was trying to enhance Netscape 2.0
 * Netscape changed the name to JavaScript in a marketing ploy<!--- .element: class="fragment" data-fragment-index="3" -->
 * IE adopted JavaScript in August 1996 when releasing v.3.0<!--- .element: class="fragment" data-fragment-index="4" -->
 * Ecma Internation standardized JavaScript in 1999 (ECMAScript)<!--- .element: class="fragment" data-fragment-index="5" -->
@@ -93,7 +107,7 @@
 
 ## Sublime
 
-<img src="_presentation/sublime.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;background:transparent;"/>
+<img src="img/sublime.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;background:transparent;"/>
 
 * A text editor for code
 * http://www.sublimetext.com/
@@ -102,7 +116,7 @@
 
 ## Chrome
 
-<img src="_presentation/chrome.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;background:transparent;"/>
+<img src="img/chrome.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:0 auto;background:transparent;"/>
 
 * Webbrowser
 * Advanced developer tools
@@ -112,7 +126,7 @@
 
 ## Exercise Files
 
-<img src="_presentation/Octocat.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:30px auto;background:transparent;"/>
+<img src="img/Octocat.png" width="200" style="border:none;box-shadow:none; width: 200px; display:block;margin:30px auto;background:transparent;"/>
 
 * https://github.com/js-workshops/intro
 * Download files using git clone or the ‘Download Zip’ button
@@ -122,11 +136,159 @@
 
 ## Console
 
-<img src="_presentation/console.png" width="600" style="border:none;box-shadow:none; width: 600px; display:block;margin:30px auto;background:transparent;"/>
+<img src="img/console.png" width="600" style="border:none;box-shadow:none; width: 600px; display:block;margin:30px auto;background:transparent;"/>
 
 * Chrome Menu (top right hamburger button) -> Tools -> Developer Tools
 * Mac shortcut: Cmd + Opt + i
 * PC shortcut: F12, Ctrl + Shift + i
+
+---
+
+# Syntax
+
+----
+
+## Reserved Characters
+
+Programming languages are made of reserved characters. This allows you to tell the computer what to do without writting 010101000.
+
+----
+
+## Strings
+
+In JavaScript, you can declare strings with single or double quotation marks.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+"String with double quotes"
+'String with single quotes'
+</code></pre>
+
+----
+
+## Escaping Characters
+
+You can use a backward slash (\\) to escape a character. For example, you might want to use a single quotation mark inside your string that is wrapped in single quotation marks.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+'Charlie Brown\'s dog is named Snoopy.'
+</code></pre>
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 001.1-syntax.html
+
+----
+
+## Numbers
+
+In JavaScript, you declare numbers - integers and decimals.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+42
+3.14159
+</code></pre>
+
+----
+
+## Booleans
+
+The Boolean data type is a data type, have two values, intended to represent true and false.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+true
+false
+</code></pre>
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 001.2-syntax.html
+
+---
+
+# Variables
+
+----
+
+## Mozilla Developer Network
+
+> You use variables as **symbolic names** for values in your application. The names of variables, called **identifiers**, conform to certain rules.
+
+----
+
+## Memory
+
+The variable name you create is a pointer to that data stored in memory.
+
+----
+
+## Variable Rules
+
+* Must start with a letter, underscore (&#95;), or dollar sign($)<!--- .element: class="fragment" data-fragment-index="1" -->
+* Subsequent letters can also be digits (0-9)<!--- .element: class="fragment" data-fragment-index="2" -->
+* Variable names are case sensitive<!--- .element: class="fragment" data-fragment-index="3" -->
+
+----
+
+## Declaring Variables
+
+Using the *var* keyword, we are able to declare variables to the current scope.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+var x = 18;
+</code></pre>
+
+Note: We will go over global variables at a later point.
+
+----
+
+## Statement
+
+A simple variable declaration has two ***operands***, a ***left operand*** and a ***right operand***. The ***left operand*** is on the left side of the equal sign, and the ***right operand*** is on the right side.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+var y = "string";
+</code></pre>
+
+----
+
+## Semi-colons
+
+Statements need to end with a semi-colon.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
+var z = true;
+</code></pre>
+
+Note: I'll assign reading of when and when not to use a semi-colon.
+
+----
+
+## Variable Types
+
+Primitive Variables are the most common data types:
+
+| Type          | Example            | 
+| ------------- |:------------------:|
+| Number        | 42, 3.14159        |
+| Boolean       | true / false       |
+| Strings       | "howdy"            | 
+| undefined     | value is undefined |
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 002-variables.html
 
 ---
 
@@ -184,66 +346,7 @@ var myFunction = function(myParameter) {
 
 ## Exercise
 
-File: 001-functions-intro.html
-
----
-
-# Variables
-
-----
-
-## Mozilla Developer Network
-
-> You use variables as **symbolic names** for values in your application. The names of variables, called **identifiers**, conform to certain rules.
-
-----
-
-## Variable Rules
-
-* Must start with a letter, underscore (&#95;), or dollar sign($)<!--- .element: class="fragment" data-fragment-index="1" -->
-* Subsequent letters can also be digits (0-9)<!--- .element: class="fragment" data-fragment-index="2" -->
-* Variable names are case sensitive<!--- .element: class="fragment" data-fragment-index="3" -->
-
-----
-
-## Declaring Variables
-
-Using the *var* keyword, we are able to declare variables to the current scope.
-
-<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
-var x = 18;
-</code></pre>
-
-----
-
-## Global Variables
-
-If you don't use the *var* keyword, you will be declaring a global variable.
-
-<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="javascript">
-x = 18;
-</code></pre>
-
-----
-
-## Variable Types
-
-Primitive Variables are the most common type:
-
-| Type          | Example            | 
-| ------------- |:------------------:|
-| Number        | 42, 3.14159        |
-| Boolean       | true / false       |
-| Strings       | "howdy"            | 
-| undefined     | value is undefined |
-
-----
-
-<!--- .element: data-background="#CCC" -->
-
-## Exercise
-
-File: 002-variables.html
+File: 003-functions.html
 
 ---
 
@@ -350,7 +453,7 @@ x = x--;     // assigns the value 2 to x (x - 1)
 
 ## Exercise
 
-File: 003.1-operators.html
+File: 004.1-operators.html
 
 ----
 
@@ -369,7 +472,7 @@ var x = "two strings " + "becomes one";
 
 ## Exercise
 
-File: 003.2-operators.html
+File: 004.2-operators.html
 
 ----
 
@@ -417,7 +520,7 @@ x != z       // returns true
 var x = 2;     // assigns the number 2 to x
 var y = 2;     // assigns the number 2 to y
 var z = '2';   // assigns the string 3 to z
-x ==- y        // returns true
+x === y        // returns true
 x === z        // returns false
 x !== y        // returns false
 x !== z        // returns true
@@ -456,7 +559,7 @@ x <= z           // returns true
 
 ## Exercise
 
-File: 003.3-operators.html
+File: 004.3-operators.html
 
 ---
 
@@ -508,11 +611,23 @@ var person['firstName'];  // returns 'Jane'
 
 ----
 
+## Embedded JavaScript
+
+Similar to CSS, you can add JavaScript to your HTML file.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="html">
+&lt;script type="text/javascript"&gt;
+  // some javascript here
+&lt;/script&gt;
+</code></pre>
+
+----
+
 <!--- .element: data-background="#CCC" -->
 
 ## Exercise
 
-File: 004-objects.html
+File: 005-objects.html
 
 ---
 
@@ -534,12 +649,90 @@ File: 004-objects.html
 
 ## Syntax
 
-* Are created with the keyword: <!--- .element: class="fragment" data-fragment-index="1" -->***function name()***
-* You can pass in as many parameters inside the parenthesis: <!--- .element: class="fragment" data-fragment-index="2" -->***function name(param)***
-* Multiple parameters are separated with commas: <!--- .element: class="fragment" data-fragment-index="3" --> ***function name(param1, param2, param3)***
-* You statement/code is wrapped in curly brackets after the parenthesis:  <!--- .element: class="fragment" data-fragment-index="4" -->***function name() { [statement] };***
-* Return one value (i.e. Object, Variable, Function, etc)<!--- .element: class="fragment" data-fragment-index="5" -->
-* After the closing curly bracket, you end the function with a semi-colon (;)<!--- .element: class="fragment" data-fragment-index="6" -->
+Global Function
+
+<small>Note that we will cover the difference between global and local variables in the next lesson.</small>
+
+* <!--- .element: class="fragment" data-fragment-index="1" -->Are created with the keyword ***function***
+* <!--- .element: class="fragment" data-fragment-index="2" -->If creating a global function, you add the name after the ***function*** keyword
+* <!--- .element: class="fragment" data-fragment-index="3" -->The function name is followed with parenthesis ***()***
+
+<pre><!--- .element: class="fragment" data-fragment-index="4" --><code data-trim class="javascript">
+function myFunctionName()
+</code></pre>
+
+----
+
+## Syntax
+
+Local Function
+
+* <!--- .element: class="fragment" data-fragment-index="1" -->To create a local function, you use the ***var*** keyword and the statement character (***=***)
+* <!--- .element: class="fragment" data-fragment-index="2" -->The function name is the ***left operand*** of the statement
+* <!--- .element: class="fragment" data-fragment-index="3" -->The right operand is the ***function*** keyword followed by parenthesis ***()***
+
+<pre><!--- .element: class="fragment" data-fragment-index="4" --><code data-trim class="javascript">
+var myFunctionName = function()
+</code></pre>
+
+----
+
+## Syntax
+
+Function Declaration
+
+* <!--- .element: class="fragment" data-fragment-index="1" -->The function declaration is after the parenthesis ***()***
+* <!--- .element: class="fragment" data-fragment-index="2" -->The statement lives between curly brackets ***{}***
+* <!--- .element: class="fragment" data-fragment-index="3" -->After the closing curly bracket, you end the function with a semi-colon (;)
+
+
+<pre><!--- .element: class="fragment" data-fragment-index="4" --><code data-trim class="javascript">
+var myFunctionName = function() {
+  // declaration here
+};
+
+function myFunctionName() {
+  // declaration here
+};
+</code></pre>
+
+----
+
+## Syntax
+
+Params
+
+* <!--- .element: class="fragment" data-fragment-index="1" -->Inside the parenthesis, after the ***function*** keyword, you can pass in paramaters ***(param)***
+* <!--- .element: class="fragment" data-fragment-index="2" -->Parameters are used to pass data into the function to reference in your declaration.
+
+<pre><!--- .element: class="fragment" data-fragment-index="3" --><code data-trim class="javascript">
+var myAlert = function(msg) {
+  alert("ALERT: " + msg);
+}
+
+myAlert("Are you confused yet?");
+// creates the alert: ALERT: Are you confused yet?
+myAlert("Don't worry. It will make sense :)");
+// creates the alert: ALERT: Don't worry. It will make sense :)
+</code></pre>
+
+----
+
+## Syntax
+
+Multiple Params
+
+* <!--- .element: class="fragment" data-fragment-index="1" -->Multiple parameters can be passed inside the parenthesis after the ***function*** keyword.
+* <!--- .element: class="fragment" data-fragment-index="2" -->Each parameter inside the parenthesis is separated with a comma.
+
+<pre><!--- .element: class="fragment" data-fragment-index="3" --><code data-trim class="javascript">
+function multiply(x, y) {
+  return x * y;
+};
+
+multiply(2, 4);
+// returns the number 8 
+</code></pre>
 
 ----
 
@@ -581,7 +774,68 @@ var z = multiply(2, 4); // assigns the number 8 to z
 
 ## Exercise
 
-File: 005-functions.html
+File: 006-functions.html
+
+---
+
+# External JavaScript
+
+----
+
+## Inline JavaScript
+
+Inline JavaScript is added directly to the DOM between a &lt;script&gt; and &lt;/script&gt; tag. If your not using the HTML5 Document type, then you need to define a type on the opening script tag:
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="html">&lt;script type=“text/javascript”&gt; // JavaScript goes here &lt;/script&gt;</code></pre>
+
+----
+
+## Inline JavaScript Use Cases
+
+Not a maintainable format. Use this only for code that should be fired immediately, and doesn’t deserve it’s own file (I.e. Google Analytics code).
+
+----
+
+## External JavaScript
+
+External JavaScript is JavaScript that lives in a separate file than the DOM, but is referenced by the DOM.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="html">&lt;script src=“path/to/file.js“&gt;&lt;/script&gt;</code></pre>
+
+----
+
+## External JavaScript
+
+Unlike CSS, which is added to the head, you typically add external JavaScript right before the closing body tag.
+
+<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" type="text/css" href="path/to/css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;script src=“path/to/file.js“&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+----
+
+## External JavaScript Use Cases
+
+* Maintainability<!--- .element: class="fragment" data-fragment-index="1" -->
+* Asynchronous loading<!--- .element: class="fragment" data-fragment-index="2" -->
+* Compiled files<!--- .element: class="fragment" data-fragment-index="3" -->
+
+----
+
+<!--- .element: data-background="#CCC" -->
+
+## Exercise
+
+File: 007-external-js.html
 
 ---
 
@@ -617,45 +871,7 @@ jQuery is a JavaScript library, or a collection of functions/methods and objects
 
 ## Exercise
 
-File: 006-jquery-cdn.html
-
-----
-
-## Inline JavaScript
-
-Inline JavaScript is added directly to the DOM between a &lt;script&gt; and &lt;/script&gt; tag. If your not using the HTML5 Document type, then you need to define a type on the opening script tag:
-
-<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="html">&lt;script type=“text/javascript”&gt; ... JavaScript goes here ... &lt;/script&gt;</code></pre>
-
-----
-
-## Inline JavaScript Use Cases
-
-Not a maintainable format. Use this only for code that should be fired immediately, and doesn’t deserve it’s own file (I.e. Google Analytics code).
-
-----
-
-## External JavaScript
-
-External JavaScript is JavaScript that lives in a separate file than the DOM, but is referenced by the DOM.
-
-<pre><!--- .element: class="fragment" data-fragment-index="1" --><code data-trim class="html">&lt;script src=“/path/to/file.js“&gt;&lt;/script&gt;</code></pre>
-
-----
-
-## External JavaScript Use Cases
-
-* Maintainability<!--- .element: class="fragment" data-fragment-index="1" -->
-* Asynchronous loading<!--- .element: class="fragment" data-fragment-index="2" -->
-* Compiled files<!--- .element: class="fragment" data-fragment-index="3" -->
-
-----
-
-<!--- .element: data-background="#CCC" -->
-
-## Exercise
-
-File: 007-external-js.html
+File: 008.1-jquery.html
 
 ----
 
@@ -665,7 +881,7 @@ jQuery, unless assigned otherwise, assigns its methods to the **$** symbol.
 
 ----
 
-## Example jQuery Method
+## jQuery Selector
 
 With jQuery assigned to the **$** symbol, here is how you select a DOM element.
 
@@ -685,7 +901,7 @@ $(".myClass")  // returns DOM element with the class 'myClass'
 
 ## Exercise
 
-File: 008-jq-selector.html
+File: 008.2-jquery.html
 
 ----
 
@@ -699,7 +915,6 @@ $("#myId").addClass('active');
 $(".myClass").hide();
 // hides the DOM element with the class 'myClass'
 </code></pre>
-
 
 ----
 
@@ -733,7 +948,7 @@ The console log statement is fired after the Document has loaded. http://learn.j
 
 ## Exercise
 
-File: 009-jq-doc-ready.html
+File: 008.3-jquery.html
 
 ----
 
@@ -762,7 +977,7 @@ Examples:<!--- .element: class="fragment" data-fragment-index="1" -->
 ----
 
 ## jQuery Hover (event)
-<img src="_presentation/jq-hover.png" width="800" style="border:none;box-shadow:none; display:block;margin:30px auto;background:transparent;"/>
+<img src="img/jq-hover.png" width="800" style="border:none;box-shadow:none; display:block;margin:30px auto;background:transparent;"/>
 
 ----
 
@@ -795,13 +1010,13 @@ $("mySelector").hover( hoverIn, hoverOut );
 
 ## Exercise
 
-File: 010.1-jq-hover.html
+File: 008.4-jquery.html
 
 ----
 
 ## Click Event
 
-<img src="_presentation/jq-click.png" width="800" style="border:none;box-shadow:none; display:block;margin:30px auto;background:transparent;"/>
+<img src="img/jq-click.png" width="800" style="border:none;box-shadow:none; display:block;margin:30px auto;background:transparent;"/>
 
 ----
 
@@ -822,7 +1037,7 @@ $("mySelector").click(function(e) {
 
 ## Exercise
 
-File: 010.2-jq-click.html
+File: 008.5-jquery.html
 
 ----
 
@@ -834,7 +1049,7 @@ jQuery animations allow you to add visual effects to the browser with JavaScript
 
 ## jQuery Show
 
-<img src="_presentation/jq-show.png" width="800" style="border:none;box-shadow:none; display:block;margin:30px auto;background:transparent;"/>
+<img src="img/jq-show.png" width="800" style="border:none;box-shadow:none; display:block;margin:30px auto;background:transparent;"/>
 
 ----
 
@@ -853,7 +1068,7 @@ $("mySelector").show(300)
 
 ## Exercise
 
-File: 011-jq-show.html
+File: 008.6-jquery.html
 
 ---
 
