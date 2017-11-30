@@ -48,7 +48,7 @@ Reiterate the relationship between HTML, CSS, and JavaScript (noun, adjective, v
 * Exercise Files
   Stored where else? Github
   !Paste Me!
-  https://github.com/briancama/intro
+  https://github.com/js-workshops/intro
 * Console
   !Screenshare!
   - 3 Ways to Access
