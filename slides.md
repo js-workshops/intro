@@ -158,7 +158,7 @@ File: 001.1-syntax.html
 
 ## Numbers
 
-In JavaScript, you declare numbers - integers and decimals.
+In JavaScript, you can also create the primitive data type of numbers - integers and decimals.
 
 <pre><code data-trim class="javascript">
 42
@@ -169,7 +169,7 @@ In JavaScript, you declare numbers - integers and decimals.
 
 ## Booleans
 
-The Boolean data type is a data type, have two values, intended to represent true and false.
+The Boolean data type is a data type made up of only two values, intended to represent true and false.
 
 <pre><code data-trim class="javascript">
 true
