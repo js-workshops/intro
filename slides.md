@@ -2,22 +2,9 @@
 
 # Intro to JavaScript
 
-## Evan Johnson
+## Brian Cama
 
 ---
-
-## About Me
-
-* Front-End Engineer, Amazon
-* Self-taught
-* Loves JavaScript
-
----
-
-## About You
-
-* Introduce yourself (i.e. name, what you do, random fact)
-* Why do you want to learn JavaScript?
 
 ---
 
@@ -27,26 +14,14 @@
 * Tools
 * Syntax
 * Variables
-* Functions (intro)
-* Operators
-* Objects
-* Functions
-* External JavaScript
-* jQuery
 
 ---
 
 ## Learning Objectives
 
 * Describe JavaScript
+* Access the Console through the Chrome Developer Tools
 * Create a JS Variable
-* Describe 3 different types of variables
-* Apply JS Operators to:
-  * preform arithmetic
-  * concatenate strings
-  * compare variables
-* Create a JS Object
-* Access a JS Object's properties
 
 ---
 
@@ -271,11 +246,11 @@ Note: I'll assign reading of when and when not to use a semi-colon.
 
 Primitive Variables are the most common data types:
 
-| Type          | Example            | 
+| Type          | Example            |
 | ------------- |:------------------:|
 | Number        | 42, 3.14159        |
 | Boolean       | true / false       |
-| Strings       | "howdy"            | 
+| Strings       | "howdy"            |
 | undefined     | value is undefined |
 
 ----
@@ -362,11 +337,11 @@ File: 003-functions.html
 
 ## Arithmetic Operators
 
-| Operator      | Description        | 
+| Operator      | Description        |
 | ------------- |:------------------:|
 | +             | Addition           |
 | -             | Subtraction        |
-| *             | Multiplication     | 
+| *             | Multiplication     |
 | /             | Division           |
 | %             | Modulus            |
 | ++            | Increment          |
@@ -391,7 +366,7 @@ x = x--;        // assigns the value 2 to x (x - 1)
 
 ## Arithmetic Parenthesis
 
-Parenthesis can be used to indicate which part of an equation you want to evaluate first. 
+Parenthesis can be used to indicate which part of an equation you want to evaluate first.
 
 <pre><code data-trim class="javascript">
 var x = 2 * (100 / 5);   // assigns the value 40 to x
@@ -405,11 +380,11 @@ var x = (100 / 5) * 2;   // assigns the value 40 to x
 
 ## Assignment Operators
 
-| Shorthand     | Meaning            | 
+| Shorthand     | Meaning            |
 | ------------- |:------------------:|
 | x += y        | x = x + y          |
 | x -= y        | x = x - y          |
-| x &#42;= y    | x = x * y          | 
+| x &#42;= y    | x = x * y          |
 | x /= y        | x = x / y          |
 | x %= y        | x = x % y          |
 
@@ -472,7 +447,7 @@ File: 004.2-operators.html
 
 ## Equal and Not Equal
 
-| Operator       | Description                                | 
+| Operator       | Description                                |
 | -------------- |:------------------------------------------:|
 | Equal (==)     | Returns true if the operands are equal     |
 | Not equal (!=) | Returns true if the operands are not equal |
@@ -495,7 +470,7 @@ x != z       // returns true
 
 ## Strict Equal and Not Equal
 
-| Operator               | Description                                                            | 
+| Operator               | Description                                                            |
 |------------------------|:----------------------------------------------------------------------:|
 | Strict equal (===)     | Returns true if the operands are equal and of the same type            |
 | Strict not equal (!==) | Returns true if the operands are not equal and/or not of the same type |
@@ -518,7 +493,7 @@ x !== z        // returns true
 
 ## Greater Than / Less Than
 
-| Operator                   | Description                                                                    | 
+| Operator                   | Description                                                                    |
 | -------------------------- |:------------------------------------------------------------------------------:|
 | Greater than (>)           | Returns true if the left operand is greater than the right operand             |
 | Greater than or equal (>=) | Returns true if the left operand is greater than or equal to the right operand |
@@ -715,7 +690,7 @@ function multiply(x, y) {
 };
 
 multiply(2, 4);
-// returns the number 8 
+// returns the number 8
 </code></pre>
 
 ----
